@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "hybris-hac-lite": {
+      "command": "node",
+      "args": ["/absolute/path/to/hybris-mcp-lite/dist/index.js"],
+      "env": {
+        "HAC_URL": "https://localhost:9002/hac",
+        "HAC_USER": "admin",
+        "HAC_PASS": "your-local-password",
+        "HAC_LOG_PATH": "/path/to/hybris/log/tomcat/console-YYYYMMDD.log",
+        "HAC_INSECURE_TLS": "true"
+      }
+    }
+  }
+}

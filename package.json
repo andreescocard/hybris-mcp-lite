@@ -1,0 +1,34 @@
+{
+  "name": "hybris-hac-mcp-lite",
+  "version": "0.1.0",
+  "description": "Read-only MCP server for SAP Commerce (Hybris) HAC, for local/dev instances.",
+  "license": "MIT",
+  "author": "Andre Escocard",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreescocard/hybris-mcp-lite.git"
+  },
+  "keywords": ["sap-commerce", "hybris", "hac", "mcp", "claude"],
+  "type": "module",
+  "bin": {
+    "hybris-hac-mcp-lite": "./dist/index.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "smoke": "tsx scripts/smoke.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.5",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitest": "^4.1.10"
+  }
+}
